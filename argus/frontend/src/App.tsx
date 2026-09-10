@@ -25,9 +25,6 @@ export default function App() {
         {/* Top Nav */}
       <nav className="bg-argus-card border-b border-argus-border px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-argus-accent rounded-lg flex items-center justify-center">
-            <Eye className="w-5 h-5 text-white" />
-          </div>
           <h1 className="text-xl font-bold text-white">
             ARGUS <span className="text-sm font-normal text-gray-400">— AI Field Intelligence</span>
           </h1>
