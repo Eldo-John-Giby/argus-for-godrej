@@ -1,0 +1,524 @@
+{
+  "filename": "Dock level, dragging cupboard.mp4",
+  "duration_s": 31.0,
+  "frames": 930,
+  "fps": 30.0,
+  "processing_fps": 10.3,
+  "detection_stats": {
+    "person_frames": 4431,
+    "object_frames": 878,
+    "by_class": {
+      "person": 4431,
+      "box": 500,
+      "trolley": 268,
+      "cardboard box": 235,
+      "cabinet": 107,
+      "cupboard": 35,
+      "carton": 1
+    }
+  },
+  "ground_truth": [
+    "2_product_dragged",
+    "8_dragging_no_trolley"
+  ],
+  "ppe": {
+    "enabled": true,
+    "model": "best.pt",
+    "violation_frames": 4,
+    "tracks": {
+      "2": 1,
+      "152": 2,
+      "523": 1
+    }
+  },
+  "face_blur": {
+    "enabled": true,
+    "policy": "faces pixelated in stored event frames by default; raw mp4 extracts remain local-only source footage"
+  },
+  "raw_events": [
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 0.0,
+      "risk_score": 26.2,
+      "tier": "Medium",
+      "confidence": 0.668,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 2,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 3.3,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.209,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 70.65353393554688,
+        "drag_duration": 2.3,
+        "net_displacement": 137.3,
+        "bottom_y": 242.0,
+        "bbox": [
+          693.5171508789062,
+          100.49030303955078,
+          775.7322998046875,
+          241.9927520751953
+        ]
+      },
+      "track_id": 50,
+      "frame": 99,
+      "source": "fsm",
+      "class": "carton"
+    },
+    {
+      "behaviour_type": "11_wrong_orientation",
+      "timestamp": 4.766666666666667,
+      "risk_score": 19.0,
+      "tier": "Low",
+      "confidence": 0.136,
+      "status": "observed",
+      "features": {
+        "frames": 8,
+        "aspect_ratio": 2.1,
+        "class": "cabinet",
+        "velocity": 0.0,
+        "footprint_ratio": 2.1
+      },
+      "track_id": 53,
+      "source": "cross_track"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 8.4,
+      "risk_score": 26.6,
+      "tier": "Medium",
+      "confidence": 0.744,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 152,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 8.5,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.698,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 152,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 8.9,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.261,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 105.4606874527469,
+        "drag_duration": 1.4,
+        "net_displacement": 171.9,
+        "bottom_y": 332.2,
+        "bbox": [
+          919.2395629882812,
+          156.9310302734375,
+          1060.979248046875,
+          332.15673828125
+        ]
+      },
+      "track_id": 192,
+      "frame": 267,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 10.167,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.187,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 104.79752760667061,
+        "drag_duration": 0.47,
+        "net_displacement": 49.4,
+        "bottom_y": 271.6,
+        "bbox": [
+          474.4248962402344,
+          209.2313690185547,
+          575.0850219726562,
+          271.6285400390625
+        ]
+      },
+      "track_id": 243,
+      "frame": 305,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 11.833,
+      "risk_score": 36.3,
+      "tier": "High",
+      "confidence": 0.144,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          85.92738389968902,
+          432.89625674486314
+        ]
+      },
+      "track_id": 266,
+      "frame": 355,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 11.867,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.449,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 332.4645996093762,
+        "drag_duration": 0.4,
+        "net_displacement": 50.5,
+        "bottom_y": 417.3,
+        "bbox": [
+          736.7008056640625,
+          23.5773983001709,
+          1074.409423828125,
+          417.29193115234375
+        ]
+      },
+      "track_id": 229,
+      "frame": 356,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 11.9,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.147,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          200.06011962890696,
+          173.0248260498053
+        ]
+      },
+      "track_id": 359,
+      "frame": 357,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 14.567,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.106,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -89.88510131835969,
+          195.4111862182624
+        ]
+      },
+      "track_id": 402,
+      "frame": 437,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 14.633,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.164,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -124.08416748046919,
+          144.64187622070364
+        ]
+      },
+      "track_id": 402,
+      "frame": 439,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 15.333,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.427,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 94.25926208496128,
+        "drag_duration": 0.4,
+        "net_displacement": 37.4,
+        "bottom_y": 572.5,
+        "bbox": [
+          174.258056640625,
+          55.286468505859375,
+          658.9427490234375,
+          572.4674682617188
+        ]
+      },
+      "track_id": 229,
+      "frame": 460,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 21.5,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.13,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          280.8404541015585,
+          -245.3850555419887
+        ]
+      },
+      "track_id": 550,
+      "frame": 645,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 22.5,
+      "risk_score": 26.2,
+      "tier": "Medium",
+      "confidence": 0.677,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 523,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 23.167,
+      "risk_score": 27.5,
+      "tier": "Medium",
+      "confidence": 0.45,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 169.47283172607303,
+        "drag_duration": 0.5,
+        "net_displacement": 85.7,
+        "bottom_y": 607.8,
+        "bbox": [
+          91.90914154052734,
+          288.6437072753906,
+          450.72796630859375,
+          607.7789916992188
+        ]
+      },
+      "track_id": 229,
+      "frame": 695,
+      "source": "fsm",
+      "class": "box"
+    }
+  ],
+  "unique_events": [
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 0.0,
+      "risk_score": 26.2,
+      "tier": "Medium",
+      "confidence": 0.668,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 2,
+      "source": "ppe",
+      "end_timestamp": 0.0
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 3.3,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.209,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 70.65353393554688,
+        "drag_duration": 2.3,
+        "net_displacement": 137.3,
+        "bottom_y": 242.0,
+        "bbox": [
+          693.5171508789062,
+          100.49030303955078,
+          775.7322998046875,
+          241.9927520751953
+        ]
+      },
+      "track_id": 50,
+      "frame": 99,
+      "source": "fsm",
+      "class": "carton",
+      "end_timestamp": 3.3
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 8.4,
+      "risk_score": 26.6,
+      "tier": "Medium",
+      "confidence": 0.744,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 152,
+      "source": "ppe",
+      "end_timestamp": 8.5
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 8.9,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.261,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 105.4606874527469,
+        "drag_duration": 1.4,
+        "net_displacement": 171.9,
+        "bottom_y": 332.2,
+        "bbox": [
+          919.2395629882812,
+          156.9310302734375,
+          1060.979248046875,
+          332.15673828125
+        ]
+      },
+      "track_id": 192,
+      "frame": 267,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 8.9
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 11.867,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.449,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 332.4645996093762,
+        "drag_duration": 0.4,
+        "net_displacement": 50.5,
+        "bottom_y": 417.3,
+        "bbox": [
+          736.7008056640625,
+          23.5773983001709,
+          1074.409423828125,
+          417.29193115234375
+        ]
+      },
+      "track_id": 229,
+      "frame": 356,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 15.333
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 22.5,
+      "risk_score": 26.2,
+      "tier": "Medium",
+      "confidence": 0.677,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 523,
+      "source": "ppe",
+      "end_timestamp": 22.5
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 23.167,
+      "risk_score": 27.5,
+      "tier": "Medium",
+      "confidence": 0.45,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 169.47283172607303,
+        "drag_duration": 0.5,
+        "net_displacement": 85.7,
+        "bottom_y": 607.8,
+        "bbox": [
+          91.90914154052734,
+          288.6437072753906,
+          450.72796630859375,
+          607.7789916992188
+        ]
+      },
+      "track_id": 229,
+      "frame": 695,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 23.167
+    }
+  ],
+  "clips": [
+    "clips\\Dock_level__dragging_cupboard_mp4\\13_ppe_noncompliance_t0.0s.mp4",
+    "clips\\Dock_level__dragging_cupboard_mp4\\2_product_dragged_t3.3s.mp4",
+    "clips\\Dock_level__dragging_cupboard_mp4\\13_ppe_noncompliance_t8.4s.mp4",
+    "clips\\Dock_level__dragging_cupboard_mp4\\2_product_dragged_t8.9s.mp4",
+    "clips\\Dock_level__dragging_cupboard_mp4\\2_product_dragged_t11.9s.mp4",
+    "clips\\Dock_level__dragging_cupboard_mp4\\13_ppe_noncompliance_t22.5s.mp4",
+    "clips\\Dock_level__dragging_cupboard_mp4\\2_product_dragged_t23.2s.mp4"
+  ]
+}

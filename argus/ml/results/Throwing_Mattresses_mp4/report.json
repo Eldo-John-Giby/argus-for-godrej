@@ -1,0 +1,207 @@
+{
+  "filename": "Throwing Mattresses.mp4",
+  "duration_s": 41.6,
+  "frames": 1249,
+  "fps": 30.0,
+  "processing_fps": 12.5,
+  "detection_stats": {
+    "person_frames": 7120,
+    "object_frames": 322,
+    "by_class": {
+      "person": 7120,
+      "box": 196,
+      "trolley": 190,
+      "cardboard box": 95,
+      "carton": 26,
+      "cabinet": 5
+    }
+  },
+  "ground_truth": [
+    "3_product_thrown"
+  ],
+  "ppe": {
+    "enabled": true,
+    "model": "best.pt",
+    "violation_frames": 0,
+    "tracks": {}
+  },
+  "face_blur": {
+    "enabled": true,
+    "policy": "faces pixelated in stored event frames by default; raw mp4 extracts remain local-only source footage"
+  },
+  "raw_events": [
+    {
+      "behaviour_type": "6_stepping_on_packages",
+      "timestamp": 4.5,
+      "risk_score": 29.1,
+      "tier": "Medium",
+      "confidence": 0.405,
+      "status": "observed",
+      "features": {
+        "frames": 12,
+        "on_class": "carton",
+        "person_bottom": 515.2,
+        "velocity": 0.0,
+        "footprint_ratio": 1.0,
+        "carton_bbox": [
+          804.4,
+          521.8,
+          855.9,
+          624.2
+        ]
+      },
+      "track_id": 65,
+      "source": "cross_track"
+    },
+    {
+      "behaviour_type": "6_stepping_on_packages",
+      "timestamp": 8.766666666666667,
+      "risk_score": 30.4,
+      "tier": "Medium",
+      "confidence": 0.642,
+      "status": "potential",
+      "features": {
+        "frames": 12,
+        "on_class": "box",
+        "person_bottom": 524.0,
+        "velocity": 0.0,
+        "footprint_ratio": 1.0,
+        "carton_bbox": [
+          836.0,
+          532.3,
+          895.0,
+          605.8
+        ]
+      },
+      "track_id": 65,
+      "source": "cross_track"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 16.433,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.423,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 67.65028381347662,
+        "drag_duration": 1.27,
+        "net_displacement": 59.2,
+        "bottom_y": 622.5,
+        "bbox": [
+          865.8267211914062,
+          522.8289794921875,
+          946.3963623046875,
+          622.4644165039062
+        ]
+      },
+      "track_id": 228,
+      "frame": 493,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "6_stepping_on_packages",
+      "timestamp": 38.833333333333336,
+      "risk_score": 30.2,
+      "tier": "Medium",
+      "confidence": 0.608,
+      "status": "potential",
+      "features": {
+        "frames": 12,
+        "on_class": "cardboard box",
+        "person_bottom": 547.5,
+        "velocity": 0.0,
+        "footprint_ratio": 1.0,
+        "carton_bbox": [
+          751.2,
+          542.5,
+          803.4,
+          647.4
+        ]
+      },
+      "track_id": 430,
+      "source": "cross_track"
+    }
+  ],
+  "unique_events": [
+    {
+      "behaviour_type": "6_stepping_on_packages",
+      "timestamp": 4.5,
+      "risk_score": 30.4,
+      "tier": "Medium",
+      "confidence": 0.642,
+      "status": "observed",
+      "features": {
+        "frames": 12,
+        "on_class": "carton",
+        "person_bottom": 515.2,
+        "velocity": 0.0,
+        "footprint_ratio": 1.0,
+        "carton_bbox": [
+          804.4,
+          521.8,
+          855.9,
+          624.2
+        ]
+      },
+      "track_id": 65,
+      "source": "cross_track",
+      "end_timestamp": 8.766666666666667
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 16.433,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.423,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 67.65028381347662,
+        "drag_duration": 1.27,
+        "net_displacement": 59.2,
+        "bottom_y": 622.5,
+        "bbox": [
+          865.8267211914062,
+          522.8289794921875,
+          946.3963623046875,
+          622.4644165039062
+        ]
+      },
+      "track_id": 228,
+      "frame": 493,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 16.433
+    },
+    {
+      "behaviour_type": "6_stepping_on_packages",
+      "timestamp": 38.833333333333336,
+      "risk_score": 30.2,
+      "tier": "Medium",
+      "confidence": 0.608,
+      "status": "potential",
+      "features": {
+        "frames": 12,
+        "on_class": "cardboard box",
+        "person_bottom": 547.5,
+        "velocity": 0.0,
+        "footprint_ratio": 1.0,
+        "carton_bbox": [
+          751.2,
+          542.5,
+          803.4,
+          647.4
+        ]
+      },
+      "track_id": 430,
+      "source": "cross_track",
+      "end_timestamp": 38.833333333333336
+    }
+  ],
+  "clips": [
+    "clips\\Throwing_Mattresses_mp4\\6_stepping_on_packages_t4.5s.mp4",
+    "clips\\Throwing_Mattresses_mp4\\2_product_dragged_t16.4s.mp4",
+    "clips\\Throwing_Mattresses_mp4\\6_stepping_on_packages_t38.8s.mp4"
+  ]
+}

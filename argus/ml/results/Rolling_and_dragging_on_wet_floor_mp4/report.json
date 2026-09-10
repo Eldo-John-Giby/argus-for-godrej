@@ -1,0 +1,179 @@
+{
+  "filename": "Rolling and dragging on wet floor.mp4",
+  "duration_s": 6.1,
+  "frames": 183,
+  "fps": 30.0,
+  "processing_fps": 16.0,
+  "detection_stats": {
+    "person_frames": 2100,
+    "object_frames": 164,
+    "by_class": {
+      "person": 2100,
+      "cardboard box": 73,
+      "cupboard": 33,
+      "box": 33,
+      "cabinet": 25,
+      "trolley": 9
+    }
+  },
+  "ground_truth": [
+    "2_product_dragged"
+  ],
+  "ppe": {
+    "enabled": true,
+    "model": "best.pt",
+    "violation_frames": 0,
+    "tracks": {}
+  },
+  "face_blur": {
+    "enabled": true,
+    "policy": "faces pixelated in stored event frames by default; raw mp4 extracts remain local-only source footage"
+  },
+  "raw_events": [
+    {
+      "behaviour_type": "11_wrong_orientation",
+      "timestamp": 1.4333333333333333,
+      "risk_score": 18.9,
+      "tier": "Low",
+      "confidence": 0.13,
+      "status": "observed",
+      "features": {
+        "frames": 8,
+        "aspect_ratio": 4.3,
+        "class": "cabinet",
+        "velocity": 0.0,
+        "footprint_ratio": 4.3
+      },
+      "track_id": 80,
+      "source": "cross_track"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 2.033,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.258,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 92.75678362165185,
+        "drag_duration": 0.57,
+        "net_displacement": 26.4,
+        "bottom_y": 719.9,
+        "bbox": [
+          308.1358642578125,
+          546.2918701171875,
+          1033.2943115234375,
+          719.935302734375
+        ]
+      },
+      "track_id": 80,
+      "frame": 61,
+      "source": "fsm",
+      "class": "cabinet"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 3.933,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.306,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 172.86758422851625,
+        "drag_duration": 0.47,
+        "net_displacement": 82.8,
+        "bottom_y": 400.0,
+        "bbox": [
+          899.9765014648438,
+          209.2587432861328,
+          1028.3931884765625,
+          400.0010070800781
+        ]
+      },
+      "track_id": 25,
+      "frame": 118,
+      "source": "fsm",
+      "class": "cupboard"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 5.133,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.147,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 136.75170898437426,
+        "drag_duration": 0.6,
+        "net_displacement": 61.3,
+        "bottom_y": 719.8,
+        "bbox": [
+          741.302978515625,
+          602.2734985351562,
+          1039.1380615234375,
+          719.8161010742188
+        ]
+      },
+      "track_id": 7,
+      "frame": 154,
+      "source": "fsm",
+      "class": "box"
+    }
+  ],
+  "unique_events": [
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 2.033,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.258,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 92.75678362165185,
+        "drag_duration": 0.57,
+        "net_displacement": 26.4,
+        "bottom_y": 719.9,
+        "bbox": [
+          308.1358642578125,
+          546.2918701171875,
+          1033.2943115234375,
+          719.935302734375
+        ]
+      },
+      "track_id": 80,
+      "frame": 61,
+      "source": "fsm",
+      "class": "cabinet",
+      "end_timestamp": 2.033
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 3.933,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.306,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 172.86758422851625,
+        "drag_duration": 0.47,
+        "net_displacement": 82.8,
+        "bottom_y": 400.0,
+        "bbox": [
+          899.9765014648438,
+          209.2587432861328,
+          1028.3931884765625,
+          400.0010070800781
+        ]
+      },
+      "track_id": 25,
+      "frame": 118,
+      "source": "fsm",
+      "class": "cupboard",
+      "end_timestamp": 3.933
+    }
+  ],
+  "clips": [
+    "clips\\Rolling_and_dragging_on_wet_floor_mp4\\2_product_dragged_t2.0s.mp4",
+    "clips\\Rolling_and_dragging_on_wet_floor_mp4\\2_product_dragged_t3.9s.mp4"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "level": "video",
+  "videos_evaluated": 7,
+  "precision": 0.294,
+  "recall": 0.417,
+  "f1": 0.345,
+  "true_positives": 5,
+  "false_positives": 12,
+  "false_negatives": 7,
+  "core_precision": 0.385,
+  "core_recall": 0.417,
+  "core_f1": 0.4,
+  "core_true_positives": 5,
+  "core_false_positives": 8,
+  "core_false_negatives": 7,
+  "ppe_events": 18,
+  "per_video": [
+    {
+      "video": "Dock level, dragging cupboard.mp4",
+      "ground_truth": [
+        "2_product_dragged",
+        "8_dragging_no_trolley"
+      ],
+      "predicted": [
+        "13_ppe_noncompliance",
+        "2_product_dragged"
+      ],
+      "true_positives": 1,
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    {
+      "video": "KD packets dragged, heavy box kept on other packets.mp4",
+      "ground_truth": [
+        "2_product_dragged",
+        "4_improper_stacking"
+      ],
+      "predicted": [
+        "13_ppe_noncompliance",
+        "1_product_dropped",
+        "2_product_dragged",
+        "3_product_thrown",
+        "8_dragging_no_trolley"
+      ],
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 1
+    },
+    {
+      "video": "Rolling and dragging on wet floor.mp4",
+      "ground_truth": [
+        "2_product_dragged"
+      ],
+      "predicted": [
+        "2_product_dragged"
+      ],
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    {
+      "video": "Rolling and dropping carton.mp4",
+      "ground_truth": [
+        "1_product_dropped",
+        "2_product_dragged"
+      ],
+      "predicted": [
+        "13_ppe_noncompliance",
+        "1_product_dropped",
+        "2_product_dragged",
+        "3_product_thrown"
+      ],
+      "true_positives": 2,
+      "false_positives": 2,
+      "false_negatives": 0
+    },
+    {
+      "video": "Stepping on cartons, vertical product kept horizontally, heavy product kept on top.mp4",
+      "ground_truth": [
+        "11_wrong_orientation",
+        "4_improper_stacking",
+        "6_stepping_on_packages"
+      ],
+      "predicted": [
+        "2_product_dragged"
+      ],
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 3
+    },
+    {
+      "video": "Throwing Mattresses.mp4",
+      "ground_truth": [
+        "3_product_thrown"
+      ],
+      "predicted": [
+        "2_product_dragged",
+        "6_stepping_on_packages"
+      ],
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 1
+    },
+    {
+      "video": "Throwing seating cartons, using strap to hold.mp4",
+      "ground_truth": [
+        "3_product_thrown"
+      ],
+      "predicted": [
+        "13_ppe_noncompliance",
+        "2_product_dragged"
+      ],
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 1
+    }
+  ],
+  "source": "C:\\Users\\eldoj\\PycharmProjects\\Godrej\\argus\\ml\\results\\summary.json"
+}

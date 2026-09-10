@@ -1,0 +1,2325 @@
+{
+  "filename": "KD packets dragged, heavy box kept on other packets.mp4",
+  "duration_s": 33.7,
+  "frames": 1012,
+  "fps": 30.0,
+  "processing_fps": 12.8,
+  "detection_stats": {
+    "person_frames": 3639,
+    "object_frames": 2932,
+    "by_class": {
+      "person": 3639,
+      "box": 2078,
+      "cardboard box": 792,
+      "cabinet": 55,
+      "trolley": 24,
+      "cupboard": 7
+    }
+  },
+  "ground_truth": [
+    "2_product_dragged",
+    "4_improper_stacking"
+  ],
+  "ppe": {
+    "enabled": true,
+    "model": "best.pt",
+    "violation_frames": 27,
+    "tracks": {
+      "1": 6,
+      "34": 2,
+      "230": 1,
+      "161": 1,
+      "356": 17
+    }
+  },
+  "face_blur": {
+    "enabled": true,
+    "policy": "faces pixelated in stored event frames by default; raw mp4 extracts remain local-only source footage"
+  },
+  "raw_events": [
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 0.5,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.726,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 1,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 0.6,
+      "risk_score": 26.6,
+      "tier": "Medium",
+      "confidence": 0.746,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 1,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 1.467,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.563,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 56.6418457031252,
+        "drag_duration": 0.7,
+        "net_displacement": 26.0,
+        "bottom_y": 348.0,
+        "bbox": [
+          506.944580078125,
+          127.41077423095703,
+          844.6583862304688,
+          348.0028381347656
+        ]
+      },
+      "track_id": 5,
+      "frame": 44,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 2.7,
+      "risk_score": 28.8,
+      "tier": "Medium",
+      "confidence": 0.436,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 323.65631103515307,
+        "drag_duration": 0.43,
+        "net_displacement": 64.3,
+        "bottom_y": 355.7,
+        "bbox": [
+          566.6527099609375,
+          138.61996459960938,
+          838.1795654296875,
+          355.69549560546875
+        ]
+      },
+      "track_id": 37,
+      "frame": 81,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 5.9,
+      "risk_score": 29.8,
+      "tier": "Medium",
+      "confidence": 0.422,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 50.27956008911126,
+        "drag_duration": 1.33,
+        "net_displacement": 39.3,
+        "bottom_y": 342.5,
+        "bbox": [
+          557.9429931640625,
+          207.48268127441406,
+          740.4144897460938,
+          342.529296875
+        ]
+      },
+      "track_id": 5,
+      "frame": 177,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 6.4,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.703,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 1,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 6.5,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.422,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          232.79205322265707,
+          41.98940277099624
+        ]
+      },
+      "track_id": 54,
+      "frame": 195,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 6.5,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.435,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 221.04949951171955,
+        "drag_duration": 0.5,
+        "net_displacement": 44.6,
+        "bottom_y": 299.7,
+        "bbox": [
+          586.78076171875,
+          114.81742095947266,
+          877.7009887695312,
+          299.7356872558594
+        ]
+      },
+      "track_id": 82,
+      "frame": 195,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 6.6,
+      "risk_score": 40.6,
+      "tier": "High",
+      "confidence": 0.113,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          91.92169189453158,
+          287.0870590209971
+        ]
+      },
+      "track_id": 102,
+      "frame": 198,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 6.6,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.715,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 1,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "1_product_dropped",
+      "timestamp": 6.633,
+      "risk_score": 36.5,
+      "tier": "High",
+      "confidence": 0.065,
+      "status": "observed",
+      "features": {
+        "downward_velocity": 182.9410552978514,
+        "horizontal_velocity": 120.78445434570301,
+        "vertical_drop": 38.303009033203125,
+        "frame_bottom_y": 323.8428039550781
+      },
+      "track_id": 108,
+      "frame": 199,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 6.733,
+      "risk_score": 29.0,
+      "tier": "Medium",
+      "confidence": 0.243,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 218.52741786411823,
+        "drag_duration": 0.73,
+        "net_displacement": 114.2,
+        "bottom_y": 361.9,
+        "bbox": [
+          634.7750854492188,
+          170.7086181640625,
+          877.4044189453125,
+          361.88824462890625
+        ]
+      },
+      "track_id": 94,
+      "frame": 202,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 6.8,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.724,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 1,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 6.9,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.734,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 1,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 6.967,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.075,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          75.06573486328132,
+          224.6568603515627
+        ]
+      },
+      "track_id": 108,
+      "frame": 209,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 7.1,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.719,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 34,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 7.233,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.084,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 214.0449576542295,
+        "drag_duration": 0.97,
+        "net_displacement": 196.7,
+        "bottom_y": 565.2,
+        "bbox": [
+          439.123046875,
+          167.43914794921875,
+          1083.6051025390625,
+          565.2459716796875
+        ]
+      },
+      "track_id": 96,
+      "frame": 217,
+      "source": "fsm",
+      "class": "cabinet"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 7.3,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.707,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 34,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 7.4,
+      "risk_score": 39.9,
+      "tier": "High",
+      "confidence": 0.068,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -1151.8725585937234,
+          206.8576812744093
+        ]
+      },
+      "track_id": 114,
+      "frame": 222,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 7.433,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.088,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -537.3605346679707,
+          -200.40687561035227
+        ]
+      },
+      "track_id": 107,
+      "frame": 223,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 8.0,
+      "risk_score": 39.1,
+      "tier": "High",
+      "confidence": 0.222,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -198.7609863281257,
+          -283.31932067871196
+        ]
+      },
+      "track_id": 107,
+      "frame": 240,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "1_product_dropped",
+      "timestamp": 8.867,
+      "risk_score": 37.9,
+      "tier": "High",
+      "confidence": 0.174,
+      "status": "observed",
+      "features": {
+        "downward_velocity": 518.286895751955,
+        "horizontal_velocity": -140.9399414062505,
+        "vertical_drop": 146.1322479248047,
+        "frame_bottom_y": 384.0181884765625
+      },
+      "track_id": 114,
+      "frame": 266,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 9.167,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.16,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -205.58898925781324,
+          -112.14519023895303
+        ]
+      },
+      "track_id": 113,
+      "frame": 275,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 9.4,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.415,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 303.20701599121094,
+        "drag_duration": 1.3,
+        "net_displacement": 352.8,
+        "bottom_y": 270.0,
+        "bbox": [
+          646.3452758789062,
+          71.72380828857422,
+          817.0963134765625,
+          269.95880126953125
+        ]
+      },
+      "track_id": 99,
+      "frame": 282,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 10.1,
+      "risk_score": 39.1,
+      "tier": "High",
+      "confidence": 0.153,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          141.08299255371145,
+          165.36534786224425
+        ]
+      },
+      "track_id": 198,
+      "frame": 303,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "1_product_dropped",
+      "timestamp": 10.167,
+      "risk_score": 41.5,
+      "tier": "High",
+      "confidence": 0.238,
+      "status": "observed",
+      "features": {
+        "downward_velocity": 178.40698242187563,
+        "horizontal_velocity": 18.988952636718818,
+        "vertical_drop": 50.78218078613281,
+        "frame_bottom_y": 332.6236877441406
+      },
+      "track_id": 171,
+      "frame": 305,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 10.3,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.281,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          925.7821655273224,
+          -311.2269973754811
+        ]
+      },
+      "track_id": 171,
+      "frame": 309,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "4_improper_stacking",
+      "timestamp": 11.033333333333333,
+      "risk_score": 23.5,
+      "tier": "Medium",
+      "confidence": 0.09,
+      "status": "observed",
+      "features": {
+        "frames": 1,
+        "top_class": "box",
+        "bottom_class": "box",
+        "footprint_ratio": 0.1,
+        "base_speed": 146.0,
+        "velocity": 145.9768471759729,
+        "top_bbox": [
+          663.1,
+          133.1,
+          771.7,
+          194.3
+        ],
+        "bottom_bbox": [
+          723.2,
+          160.9,
+          1039.2,
+          374.6
+        ]
+      },
+      "track_id": 220,
+      "source": "cross_track"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 11.267,
+      "risk_score": 28.9,
+      "tier": "Medium",
+      "confidence": 0.377,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 30.783555772569432,
+        "drag_duration": 1.07,
+        "net_displacement": 73.1,
+        "bottom_y": 178.3,
+        "bbox": [
+          920.3406372070312,
+          35.37059783935547,
+          1100.7530517578125,
+          178.26905822753906
+        ]
+      },
+      "track_id": 113,
+      "frame": 338,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "4_improper_stacking",
+      "timestamp": 12.9,
+      "risk_score": 23.6,
+      "tier": "Medium",
+      "confidence": 0.162,
+      "status": "observed",
+      "features": {
+        "frames": 1,
+        "top_class": "box",
+        "bottom_class": "cardboard box",
+        "footprint_ratio": 0.09,
+        "base_speed": 103.3,
+        "velocity": 103.34886094853792,
+        "top_bbox": [
+          666.7,
+          80.8,
+          768.1,
+          144.0
+        ],
+        "bottom_bbox": [
+          727.4,
+          110.4,
+          1044.0,
+          325.0
+        ]
+      },
+      "track_id": 264,
+      "source": "cross_track"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 13.0,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.343,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -151.7697143554693,
+          153.2510375976568
+        ]
+      },
+      "track_id": 264,
+      "frame": 390,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 13.1,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.71,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "mask"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 230,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 13.8,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.692,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 161,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 13.867,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.446,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 119.28680419921918,
+        "drag_duration": 0.43,
+        "net_displacement": 33.8,
+        "bottom_y": 169.8,
+        "bbox": [
+          499.04119873046875,
+          52.463199615478516,
+          602.1138916015625,
+          169.7895050048828
+        ]
+      },
+      "track_id": 198,
+      "frame": 416,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 13.9,
+      "risk_score": 28.8,
+      "tier": "Medium",
+      "confidence": 0.435,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 68.57703713809745,
+        "drag_duration": 0.57,
+        "net_displacement": 38.9,
+        "bottom_y": 183.4,
+        "bbox": [
+          954.7727661132812,
+          37.95497131347656,
+          1136.40625,
+          183.3719024658203
+        ]
+      },
+      "track_id": 113,
+      "frame": 417,
+      "source": "fsm",
+      "class": "cabinet"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 14.3,
+      "risk_score": 42.5,
+      "tier": "High",
+      "confidence": 0.102,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          128.81481170654172,
+          82.4922752380363
+        ]
+      },
+      "track_id": 210,
+      "frame": 429,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 14.8,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.447,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -440.90789794922034,
+          209.26975250244215
+        ]
+      },
+      "track_id": 198,
+      "frame": 444,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 15.367,
+      "risk_score": 28.2,
+      "tier": "Medium",
+      "confidence": 0.444,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 364.81645856584674,
+        "drag_duration": 0.47,
+        "net_displacement": 136.9,
+        "bottom_y": 555.7,
+        "bbox": [
+          912.613037109375,
+          290.30609130859375,
+          1228.208251953125,
+          555.7478637695312
+        ]
+      },
+      "track_id": 82,
+      "frame": 461,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 15.533,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.194,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -62.91748046875022,
+          313.98315429687614
+        ]
+      },
+      "track_id": 320,
+      "frame": 466,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "1_product_dropped",
+      "timestamp": 15.7,
+      "risk_score": 39.1,
+      "tier": "High",
+      "confidence": 0.142,
+      "status": "observed",
+      "features": {
+        "downward_velocity": 372.2850036621107,
+        "horizontal_velocity": -120.32958984375043,
+        "vertical_drop": 51.70405578613281,
+        "frame_bottom_y": 600.6914672851562
+      },
+      "track_id": 336,
+      "frame": 471,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 16.1,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.288,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 412.65401204426985,
+        "drag_duration": 1.07,
+        "net_displacement": 386.8,
+        "bottom_y": 462.1,
+        "bbox": [
+          498.00201416015625,
+          183.21702575683594,
+          698.0708618164062,
+          462.0798645019531
+        ]
+      },
+      "track_id": 322,
+      "frame": 483,
+      "source": "fsm",
+      "class": "cabinet"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 16.1,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.236,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -102.09835052490203,
+          -104.51578617095915
+        ]
+      },
+      "track_id": 319,
+      "frame": 483,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.2,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.741,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 16.233,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.163,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -469.72732543942976,
+          2.250194549560435
+        ]
+      },
+      "track_id": 373,
+      "frame": 487,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.3,
+      "risk_score": 26.6,
+      "tier": "Medium",
+      "confidence": 0.744,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.4,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.729,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.5,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.73,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 16.533,
+      "risk_score": 41.8,
+      "tier": "High",
+      "confidence": 0.433,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          134.16641235350895,
+          -128.61488342284517
+        ]
+      },
+      "track_id": 82,
+      "frame": 496,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.7,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.738,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.8,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.727,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.9,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.727,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 17.2,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.731,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 17.3,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.721,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 17.4,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.725,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 17.7,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.734,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 17.8,
+      "risk_score": 27.7,
+      "tier": "Medium",
+      "confidence": 0.624,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 59.84802246093452,
+        "drag_duration": 0.43,
+        "net_displacement": 32.3,
+        "bottom_y": 441.2,
+        "bbox": [
+          853.7549438476562,
+          255.98463439941406,
+          1064.223388671875,
+          441.2436218261719
+        ]
+      },
+      "track_id": 82,
+      "frame": 534,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 17.8,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.725,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 18.633,
+      "risk_score": 40.4,
+      "tier": "High",
+      "confidence": 0.176,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          260.9921264648586,
+          245.31143188477958
+        ]
+      },
+      "track_id": 438,
+      "frame": 559,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 18.8,
+      "risk_score": 41.7,
+      "tier": "High",
+      "confidence": 0.436,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -311.28479003904704,
+          319.97337341307
+        ]
+      },
+      "track_id": 429,
+      "frame": 564,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 18.967,
+      "risk_score": 40.5,
+      "tier": "High",
+      "confidence": 0.258,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -337.31048583984494,
+          349.3045806884778
+        ]
+      },
+      "track_id": 433,
+      "frame": 569,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 19.1,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.705,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 19.6,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.737,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 19.7,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.725,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 20.2,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.722,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 20.3,
+      "risk_score": 26.5,
+      "tier": "Medium",
+      "confidence": 0.736,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 21.733,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.33,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 34.02454609773598,
+        "drag_duration": 2.8,
+        "net_displacement": 54.5,
+        "bottom_y": 94.9,
+        "bbox": [
+          656.5083618164062,
+          17.073060989379883,
+          782.6502685546875,
+          94.85706329345703
+        ]
+      },
+      "track_id": 428,
+      "frame": 652,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 22.167,
+      "risk_score": 28.1,
+      "tier": "Medium",
+      "confidence": 0.465,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 55.72723388671598,
+        "drag_duration": 0.43,
+        "net_displacement": 48.8,
+        "bottom_y": 424.4,
+        "bbox": [
+          847.7109375,
+          237.990478515625,
+          1067.8218994140625,
+          424.4372253417969
+        ]
+      },
+      "track_id": 82,
+      "frame": 665,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 25.5,
+      "risk_score": 30.3,
+      "tier": "Medium",
+      "confidence": 0.531,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 45.182189941404005,
+        "drag_duration": 0.43,
+        "net_displacement": 27.8,
+        "bottom_y": 377.9,
+        "bbox": [
+          804.997314453125,
+          104.73457336425781,
+          1188.9093017578125,
+          377.9286193847656
+        ]
+      },
+      "track_id": 370,
+      "frame": 765,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 26.467,
+      "risk_score": 40.2,
+      "tier": "High",
+      "confidence": 0.347,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          407.41607666016495,
+          163.42552185058943
+        ]
+      },
+      "track_id": 598,
+      "frame": 794,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 27.0,
+      "risk_score": 39.6,
+      "tier": "High",
+      "confidence": 0.266,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -105.36849975585974,
+          189.0237808227546
+        ]
+      },
+      "track_id": 598,
+      "frame": 810,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 27.067,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.32,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 208.6674499511726,
+        "drag_duration": 0.43,
+        "net_displacement": 79.7,
+        "bottom_y": 67.3,
+        "bbox": [
+          864.2320556640625,
+          18.015003204345703,
+          952.511962890625,
+          67.31598663330078
+        ]
+      },
+      "track_id": 585,
+      "frame": 812,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 29.8,
+      "risk_score": 40.9,
+      "tier": "High",
+      "confidence": 0.135,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -177.56317138671622,
+          -277.6873779296836
+        ]
+      },
+      "track_id": 661,
+      "frame": 894,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 31.567,
+      "risk_score": 28.2,
+      "tier": "Medium",
+      "confidence": 0.261,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 414.1140747070327,
+        "drag_duration": 0.43,
+        "net_displacement": 55.6,
+        "bottom_y": 384.5,
+        "bbox": [
+          816.2936401367188,
+          171.10989379882812,
+          1070.451171875,
+          384.47021484375
+        ]
+      },
+      "track_id": 652,
+      "frame": 947,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 31.733,
+      "risk_score": 41.6,
+      "tier": "High",
+      "confidence": 0.155,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -654.2065429687175,
+          636.6906738280933
+        ]
+      },
+      "track_id": 708,
+      "frame": 952,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 31.8,
+      "risk_score": 41.7,
+      "tier": "High",
+      "confidence": 0.204,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -104.12292480468233,
+          123.47282409667355
+        ]
+      },
+      "track_id": 708,
+      "frame": 954,
+      "source": "fsm",
+      "class": "box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 31.867,
+      "risk_score": 29.4,
+      "tier": "Medium",
+      "confidence": 0.534,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 154.17572021483608,
+        "drag_duration": 0.43,
+        "net_displacement": 91.1,
+        "bottom_y": 409.9,
+        "bbox": [
+          866.8327026367188,
+          197.19920349121094,
+          1146.565673828125,
+          409.9379577636719
+        ]
+      },
+      "track_id": 370,
+      "frame": 956,
+      "source": "fsm",
+      "class": "cardboard box"
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 33.033,
+      "risk_score": 30.6,
+      "tier": "Medium",
+      "confidence": 0.351,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 183.64517211915106,
+        "drag_duration": 0.43,
+        "net_displacement": 39.0,
+        "bottom_y": 108.3,
+        "bbox": [
+          869.0604248046875,
+          16.704389572143555,
+          1000.18310546875,
+          108.32217407226562
+        ]
+      },
+      "track_id": 717,
+      "frame": 991,
+      "source": "fsm",
+      "class": "box"
+    }
+  ],
+  "unique_events": [
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 0.5,
+      "risk_score": 26.6,
+      "tier": "Medium",
+      "confidence": 0.746,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 1,
+      "source": "ppe",
+      "end_timestamp": 6.9
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 1.467,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.563,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 56.6418457031252,
+        "drag_duration": 0.7,
+        "net_displacement": 26.0,
+        "bottom_y": 348.0,
+        "bbox": [
+          506.944580078125,
+          127.41077423095703,
+          844.6583862304688,
+          348.0028381347656
+        ]
+      },
+      "track_id": 5,
+      "frame": 44,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 5.9
+    },
+    {
+      "behaviour_type": "8_dragging_no_trolley",
+      "timestamp": 1.467,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.507,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 56.6418457031252,
+        "drag_duration": 0.7,
+        "net_displacement": 26.0,
+        "bottom_y": 348.0,
+        "bbox": [
+          506.944580078125,
+          127.41077423095703,
+          844.6583862304688,
+          348.0028381347656
+        ]
+      },
+      "track_id": 5,
+      "frame": 44,
+      "source": "derived_no_trolley",
+      "class": "cardboard box",
+      "end_timestamp": 5.9
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 2.7,
+      "risk_score": 28.8,
+      "tier": "Medium",
+      "confidence": 0.436,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 323.65631103515307,
+        "drag_duration": 0.43,
+        "net_displacement": 64.3,
+        "bottom_y": 355.7,
+        "bbox": [
+          566.6527099609375,
+          138.61996459960938,
+          838.1795654296875,
+          355.69549560546875
+        ]
+      },
+      "track_id": 37,
+      "frame": 81,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 2.7
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 6.5,
+      "risk_score": 38.7,
+      "tier": "High",
+      "confidence": 0.422,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          232.79205322265707,
+          41.98940277099624
+        ]
+      },
+      "track_id": 54,
+      "frame": 195,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 6.5
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 6.5,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.435,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 221.04949951171955,
+        "drag_duration": 0.5,
+        "net_displacement": 44.6,
+        "bottom_y": 299.7,
+        "bbox": [
+          586.78076171875,
+          114.81742095947266,
+          877.7009887695312,
+          299.7356872558594
+        ]
+      },
+      "track_id": 82,
+      "frame": 195,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 6.5
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 6.733,
+      "risk_score": 29.0,
+      "tier": "Medium",
+      "confidence": 0.243,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 218.52741786411823,
+        "drag_duration": 0.73,
+        "net_displacement": 114.2,
+        "bottom_y": 361.9,
+        "bbox": [
+          634.7750854492188,
+          170.7086181640625,
+          877.4044189453125,
+          361.88824462890625
+        ]
+      },
+      "track_id": 94,
+      "frame": 202,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 6.733
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 7.1,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.719,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 34,
+      "source": "ppe",
+      "end_timestamp": 7.3
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 7.433,
+      "risk_score": 39.1,
+      "tier": "High",
+      "confidence": 0.222,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -537.3605346679707,
+          -200.40687561035227
+        ]
+      },
+      "track_id": 107,
+      "frame": 223,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 8.0
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 9.4,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.415,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 303.20701599121094,
+        "drag_duration": 1.3,
+        "net_displacement": 352.8,
+        "bottom_y": 270.0,
+        "bbox": [
+          646.3452758789062,
+          71.72380828857422,
+          817.0963134765625,
+          269.95880126953125
+        ]
+      },
+      "track_id": 99,
+      "frame": 282,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 9.4
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 10.1,
+      "risk_score": 39.1,
+      "tier": "High",
+      "confidence": 0.447,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          141.08299255371145,
+          165.36534786224425
+        ]
+      },
+      "track_id": 198,
+      "frame": 303,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 14.8
+    },
+    {
+      "behaviour_type": "1_product_dropped",
+      "timestamp": 10.167,
+      "risk_score": 41.5,
+      "tier": "High",
+      "confidence": 0.238,
+      "status": "observed",
+      "features": {
+        "downward_velocity": 178.40698242187563,
+        "horizontal_velocity": 18.988952636718818,
+        "vertical_drop": 50.78218078613281,
+        "frame_bottom_y": 332.6236877441406
+      },
+      "track_id": 171,
+      "frame": 305,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 10.167
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 10.3,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.281,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          925.7821655273224,
+          -311.2269973754811
+        ]
+      },
+      "track_id": 171,
+      "frame": 309,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 10.3
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 11.267,
+      "risk_score": 28.9,
+      "tier": "Medium",
+      "confidence": 0.435,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 30.783555772569432,
+        "drag_duration": 1.07,
+        "net_displacement": 73.1,
+        "bottom_y": 178.3,
+        "bbox": [
+          920.3406372070312,
+          35.37059783935547,
+          1100.7530517578125,
+          178.26905822753906
+        ]
+      },
+      "track_id": 113,
+      "frame": 338,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 13.9
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 13.0,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.343,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -151.7697143554693,
+          153.2510375976568
+        ]
+      },
+      "track_id": 264,
+      "frame": 390,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 13.0
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 13.1,
+      "risk_score": 26.4,
+      "tier": "Medium",
+      "confidence": 0.71,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "mask"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 230,
+      "source": "ppe",
+      "end_timestamp": 13.1
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 13.8,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.692,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 161,
+      "source": "ppe",
+      "end_timestamp": 13.8
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 13.867,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.446,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 119.28680419921918,
+        "drag_duration": 0.43,
+        "net_displacement": 33.8,
+        "bottom_y": 169.8,
+        "bbox": [
+          499.04119873046875,
+          52.463199615478516,
+          602.1138916015625,
+          169.7895050048828
+        ]
+      },
+      "track_id": 198,
+      "frame": 416,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 13.867
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 15.367,
+      "risk_score": 28.2,
+      "tier": "Medium",
+      "confidence": 0.624,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 364.81645856584674,
+        "drag_duration": 0.47,
+        "net_displacement": 136.9,
+        "bottom_y": 555.7,
+        "bbox": [
+          912.613037109375,
+          290.30609130859375,
+          1228.208251953125,
+          555.7478637695312
+        ]
+      },
+      "track_id": 82,
+      "frame": 461,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 22.167
+    },
+    {
+      "behaviour_type": "8_dragging_no_trolley",
+      "timestamp": 15.367,
+      "risk_score": 28.2,
+      "tier": "Medium",
+      "confidence": 0.562,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 364.81645856584674,
+        "drag_duration": 0.47,
+        "net_displacement": 136.9,
+        "bottom_y": 555.7,
+        "bbox": [
+          912.613037109375,
+          290.30609130859375,
+          1228.208251953125,
+          555.7478637695312
+        ]
+      },
+      "track_id": 82,
+      "frame": 461,
+      "source": "derived_no_trolley",
+      "class": "box",
+      "end_timestamp": 22.167
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 16.1,
+      "risk_score": 26.3,
+      "tier": "Medium",
+      "confidence": 0.288,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 412.65401204426985,
+        "drag_duration": 1.07,
+        "net_displacement": 386.8,
+        "bottom_y": 462.1,
+        "bbox": [
+          498.00201416015625,
+          183.21702575683594,
+          698.0708618164062,
+          462.0798645019531
+        ]
+      },
+      "track_id": 322,
+      "frame": 483,
+      "source": "fsm",
+      "class": "cabinet",
+      "end_timestamp": 16.1
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 16.1,
+      "risk_score": 43.7,
+      "tier": "High",
+      "confidence": 0.236,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -102.09835052490203,
+          -104.51578617095915
+        ]
+      },
+      "track_id": 319,
+      "frame": 483,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 16.1
+    },
+    {
+      "behaviour_type": "13_ppe_noncompliance",
+      "timestamp": 16.2,
+      "risk_score": 26.6,
+      "tier": "Medium",
+      "confidence": 0.744,
+      "status": "potential",
+      "features": {
+        "missing_ppe": [
+          "hardhat"
+        ],
+        "source_model": "best.pt",
+        "domain_note": "trained on construction-site imagery"
+      },
+      "track_id": 356,
+      "source": "ppe",
+      "end_timestamp": 20.3
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 16.533,
+      "risk_score": 41.8,
+      "tier": "High",
+      "confidence": 0.433,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          134.16641235350895,
+          -128.61488342284517
+        ]
+      },
+      "track_id": 82,
+      "frame": 496,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 16.533
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 18.8,
+      "risk_score": 41.7,
+      "tier": "High",
+      "confidence": 0.436,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -311.28479003904704,
+          319.97337341307
+        ]
+      },
+      "track_id": 429,
+      "frame": 564,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 18.8
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 18.967,
+      "risk_score": 40.5,
+      "tier": "High",
+      "confidence": 0.258,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -337.31048583984494,
+          349.3045806884778
+        ]
+      },
+      "track_id": 433,
+      "frame": 569,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 18.967
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 21.733,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.33,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 34.02454609773598,
+        "drag_duration": 2.8,
+        "net_displacement": 54.5,
+        "bottom_y": 94.9,
+        "bbox": [
+          656.5083618164062,
+          17.073060989379883,
+          782.6502685546875,
+          94.85706329345703
+        ]
+      },
+      "track_id": 428,
+      "frame": 652,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 21.733
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 25.5,
+      "risk_score": 30.3,
+      "tier": "Medium",
+      "confidence": 0.534,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 45.182189941404005,
+        "drag_duration": 0.43,
+        "net_displacement": 27.8,
+        "bottom_y": 377.9,
+        "bbox": [
+          804.997314453125,
+          104.73457336425781,
+          1188.9093017578125,
+          377.9286193847656
+        ]
+      },
+      "track_id": 370,
+      "frame": 765,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 31.867
+    },
+    {
+      "behaviour_type": "8_dragging_no_trolley",
+      "timestamp": 25.5,
+      "risk_score": 30.3,
+      "tier": "Medium",
+      "confidence": 0.481,
+      "status": "potential",
+      "features": {
+        "horizontal_speed": 45.182189941404005,
+        "drag_duration": 0.43,
+        "net_displacement": 27.8,
+        "bottom_y": 377.9,
+        "bbox": [
+          804.997314453125,
+          104.73457336425781,
+          1188.9093017578125,
+          377.9286193847656
+        ]
+      },
+      "track_id": 370,
+      "frame": 765,
+      "source": "derived_no_trolley",
+      "class": "cardboard box",
+      "end_timestamp": 31.867
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 26.467,
+      "risk_score": 40.2,
+      "tier": "High",
+      "confidence": 0.347,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          407.41607666016495,
+          163.42552185058943
+        ]
+      },
+      "track_id": 598,
+      "frame": 794,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 27.0
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 27.067,
+      "risk_score": 31.3,
+      "tier": "Medium",
+      "confidence": 0.32,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 208.6674499511726,
+        "drag_duration": 0.43,
+        "net_displacement": 79.7,
+        "bottom_y": 67.3,
+        "bbox": [
+          864.2320556640625,
+          18.015003204345703,
+          952.511962890625,
+          67.31598663330078
+        ]
+      },
+      "track_id": 585,
+      "frame": 812,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 27.067
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 31.567,
+      "risk_score": 28.2,
+      "tier": "Medium",
+      "confidence": 0.261,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 414.1140747070327,
+        "drag_duration": 0.43,
+        "net_displacement": 55.6,
+        "bottom_y": 384.5,
+        "bbox": [
+          816.2936401367188,
+          171.10989379882812,
+          1070.451171875,
+          384.47021484375
+        ]
+      },
+      "track_id": 652,
+      "frame": 947,
+      "source": "fsm",
+      "class": "cardboard box",
+      "end_timestamp": 31.567
+    },
+    {
+      "behaviour_type": "3_product_thrown",
+      "timestamp": 31.733,
+      "risk_score": 41.7,
+      "tier": "High",
+      "confidence": 0.204,
+      "status": "observed",
+      "features": {
+        "throw_velocity": [
+          -654.2065429687175,
+          636.6906738280933
+        ]
+      },
+      "track_id": 708,
+      "frame": 952,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 31.8
+    },
+    {
+      "behaviour_type": "2_product_dragged",
+      "timestamp": 33.033,
+      "risk_score": 30.6,
+      "tier": "Medium",
+      "confidence": 0.351,
+      "status": "observed",
+      "features": {
+        "horizontal_speed": 183.64517211915106,
+        "drag_duration": 0.43,
+        "net_displacement": 39.0,
+        "bottom_y": 108.3,
+        "bbox": [
+          869.0604248046875,
+          16.704389572143555,
+          1000.18310546875,
+          108.32217407226562
+        ]
+      },
+      "track_id": 717,
+      "frame": 991,
+      "source": "fsm",
+      "class": "box",
+      "end_timestamp": 33.033
+    }
+  ],
+  "clips": [
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\13_ppe_noncompliance_t0.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t1.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\8_dragging_no_trolley_t1.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t2.7s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t6.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t6.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t6.7s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\13_ppe_noncompliance_t7.1s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t7.4s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t9.4s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t10.1s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\1_product_dropped_t10.2s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t10.3s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t11.3s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t13.0s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\13_ppe_noncompliance_t13.1s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\13_ppe_noncompliance_t13.8s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t13.9s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t15.4s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\8_dragging_no_trolley_t15.4s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t16.1s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t16.1s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\13_ppe_noncompliance_t16.2s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t16.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t18.8s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t19.0s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t21.7s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t25.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\8_dragging_no_trolley_t25.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t26.5s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t27.1s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t31.6s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\3_product_thrown_t31.7s.mp4",
+    "clips\\KD_packets_dragged__heavy_box_kept_on_other_packets_mp4\\2_product_dragged_t33.0s.mp4"
+  ]
+}

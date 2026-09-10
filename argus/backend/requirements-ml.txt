@@ -1,0 +1,11 @@
+# Live video-processing dependencies (perception / ingestion / PPE).
+# NOT needed for the seeded demo — the demo serves pre-computed events from
+# ml/results via seed_db.py. Install only if running:
+#   ml/run_on_videos.py  ·  backend video upload endpoints  ·  ml/ppe_detector.py
+#
+#   pip install -r requirements-ml.txt
+#
+# (numpy, PyYAML come from requirements.txt)
+
+ultralytics==8.3.0
+opencv-python-headless==4.10.0.84

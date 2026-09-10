@@ -1,0 +1,170 @@
+# Argus — Behaviour Taxonomy (12 behaviours + PPE)
+# Each behaviour maps to CV signals, severity weights, and detection thresholds.
+
+behaviours:
+  1_product_dropped:
+    name: "Product Dropped"
+    description: "Sudden downward velocity spike + ground contact + object stops"
+    severity_base: 85
+    cv_signals:
+      - downward_velocity_spike
+      - ground_contact_frame
+      - object_stationary_after
+    thresholds:
+      downward_velocity_threshold: 150.0  # px/s
+      ground_contact_frames: 3
+      post_contact_stationary_frames: 5
+    enabled: true
+    vlm_verified: true
+
+  2_product_dragged:
+    name: "Product Dragged (not lifted)"
+    description: "Object bottom-edge stays near floor while center moves horizontally"
+    severity_base: 55
+    cv_signals:
+      - bottom_edge_near_floor
+      - horizontal_motion
+    thresholds:
+      floor_proximity_px: 30
+      min_horizontal_frames: 10
+      min_horizontal_speed: 20.0  # px/s
+    enabled: true
+    vlm_verified: true
+
+  3_product_thrown:
+    name: "Product Thrown"
+    description: "Ballistic parabolic trajectory above velocity threshold"
+    severity_base: 90
+    cv_signals:
+      - parabolic_trajectory
+      - high_velocity
+    thresholds:
+      trajectory_fit_threshold: 0.85  # R² of parabolic fit
+      min_throw_velocity: 200.0  # px/s
+    enabled: true
+    vlm_verified: true
+
+  4_improper_stacking:
+    name: "Improper Stacking"
+    description: "Top product footprint > bottom product footprint (heavier/larger below violated)"
+    severity_base: 65
+    cv_signals:
+      - stacked_bbox_comparison
+    thresholds:
+      top_bottom_ratio_threshold: 1.0  # flag if top > bottom
+    enabled: true
+    vlm_verified: true
+
+  5_unstable_stacking:
+    name: "Unstable Stacking / Leaning"
+    description: "Stack vertical axis tilt beyond angle threshold"
+    severity_base: 70
+    cv_signals:
+      - stack_tilt_angle
+    thresholds:
+      tilt_angle_degrees: 10.0
+    enabled: true
+    vlm_verified: true
+
+  6_stepping_on_packages:
+    name: "Stepping / Standing on Packages"
+    description: "Person foot keypoints intersect package bbox top surface"
+    severity_base: 80
+    cv_signals:
+      - person_foot_package_intersect
+    thresholds:
+      intersect_frames: 5
+      foot_package_proximity_px: 15
+    enabled: true
+    vlm_verified: true
+
+  7_outside_designated_zone:
+    name: "Product Placed Outside Designated Zone"
+    description: "Homography-mapped floor coordinates outside configured staging polygon"
+    severity_base: 45
+    cv_signals:
+      - zone_violation
+    thresholds:
+      zone_margin_px: 20
+    enabled: true
+    vlm_verified: true
+
+  8_dragging_no_trolley:
+    name: "Dragging Instead of Using Trolley"
+    description: "Product dragged + no trolley/pallet-truck detected near operator"
+    severity_base: 60
+    cv_signals:
+      - bottom_edge_near_floor
+      - no_trolley_nearby
+    thresholds:
+      floor_proximity_px: 30
+      trolley_search_radius_px: 200
+    enabled: true
+    vlm_verified: true
+
+  9_product_overhang:
+    name: "Product Larger than Pallet / Unsafe Overhang"
+    description: "Product bbox footprint vs pallet footprint ratio exceeds safe limit"
+    severity_base: 50
+    cv_signals:
+      - overhang_ratio
+    thresholds:
+      overhang_ratio_threshold: 1.05
+    enabled: true
+    vlm_verified: false
+
+  10_rough_handling:
+    name: "Rough Handling at Transfer Points"
+    description: "High jerk (rate of acceleration change) during hand-off between two persons"
+    severity_base: 75
+    cv_signals:
+      - high_jerk_at_handoff
+    thresholds:
+      jerk_threshold: 500.0  # px/s³
+      handoff_proximity_frames: 10
+    enabled: true
+    vlm_verified: false
+
+  11_wrong_orientation:
+    name: "Wrong Product Orientation"
+    description: "Aspect ratio / long-axis angle vs configured correct orientation"
+    severity_base: 40
+    cv_signals:
+      - orientation_mismatch
+    thresholds:
+      orientation_angle_tolerance_deg: 15.0
+      aspect_ratio_tolerance: 0.3
+    enabled: true
+    vlm_verified: false
+
+  12_cluttered_staging:
+    name: "Random / Cluttered Staging"
+    description: "Local object density + overlap ratio in staging zone over rolling window"
+    severity_base: 35
+    cv_signals:
+      - high_object_density
+      - high_overlap_ratio
+    thresholds:
+      min_objects_in_zone: 4
+      overlap_ratio_threshold: 0.5
+    enabled: true
+    vlm_verified: false
+
+  13_ppe_noncompliance:
+    name: "PPE Non-compliance (no helmet / no vest)"
+    description: "Second PPE detector reports NO-Hardhat / NO-Safety Vest on a tracked person"
+    severity_base: 70
+    cv_signals:
+      - no_hardhat_box_on_person_head
+      - no_vest_box_on_person_torso
+    thresholds:
+      min_head_overlap: 0.30
+      min_torso_overlap: 0.20
+    enabled: true
+    vlm_verified: false
+
+# Fragility multipliers per product class
+fragility:
+  Fragile: 1.5
+  Standard: 1.0
+  Rugged: 0.7

@@ -1,0 +1,55 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: argus
+      POSTGRES_PASSWORD: argus
+      POSTGRES_DB: argus
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U argus"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://argus:argus@db:5432/argus
+      STORAGE_ROOT: /app/storage
+      YOLO_MODEL: yolov8n.pt
+      VLM_PROVIDER: qwen
+      ASSISTANT_API_KEY: ${ASSISTANT_API_KEY:-}
+      QWEN_API_KEY: ${QWEN_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      # Bind mount: clips are generated on the host by ml/run_on_videos.py and
+      # copied into backend/storage/clips by seed_db.py — a named volume would
+      # hide them from the container and replay would 404.
+      - ./backend/storage:/app/storage
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      # Vite proxy target INSIDE the compose network — localhost would point
+      # at the frontend container itself, not the backend service.
+      VITE_API_URL: http://backend:8000
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:
