@@ -28,10 +28,8 @@ frontend/demo.pid
 weights/clip/
 ml/weights/
 backend/weights/
-# Oversized/unreferenced detectors we don't ship (yolov8s-world.pt lives in ml/):
+# Oversized/unreferenced detectors we don't ship (yolov8s-world.pt ships in 3 copies):
 yolov8x-worldv2.pt
-/yolov8s-world.pt
-backend/yolov8s-world.pt
 backend/yolov8m-world.pt
 # Raw source footage — source of ml/results + clips/, regenerable there:
 videos/
